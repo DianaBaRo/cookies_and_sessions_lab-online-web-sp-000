@@ -2,7 +2,7 @@
   <%= product.name %>
 <% end %>
 
-<%= form_tag("/products") do %>
+<%= form_tag({controller: 'products', action: 'add', method: 'post'}) do %>
   <%= label_tag('product[name]', "Name") %>
   <%= text_field_tag('product[name]') %>
 
