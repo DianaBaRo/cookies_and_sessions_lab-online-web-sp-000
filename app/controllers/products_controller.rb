@@ -8,4 +8,8 @@ class ProductsController < ApplicationController
 
   end
 
+  def add_to_cart
+
+  end
+
 end
