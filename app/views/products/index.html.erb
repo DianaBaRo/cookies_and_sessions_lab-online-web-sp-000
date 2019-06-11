@@ -3,8 +3,6 @@
 <% end %>
 
 <%= form_tag({controller: 'products', action: 'add', method: 'post'}) do %>
-  <%= label_tag('product[name]', "Name") %>
-  <%= text_field_tag('product[name]') %>
-
-  <%= submit_tag "Add item" %>
+  <input name=product>
+  <input type=submit value='add to cart'>
 <% end %>
