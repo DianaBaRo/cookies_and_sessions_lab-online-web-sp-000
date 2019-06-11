@@ -1,17 +1,12 @@
 class ProductsController < ApplicationController
 
-  def create
-    @product = product.new(name: params[:product][:name])
-
-    redirect_to products_path
-  end
-
   def index
 
   end
 
   def add
-
+    cart << params[:product]
+    render :index
   end
 
 end
