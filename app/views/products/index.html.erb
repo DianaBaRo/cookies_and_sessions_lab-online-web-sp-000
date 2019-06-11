@@ -1,6 +1,7 @@
-<%= form_for(@product) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<%= form_tag("/products") do %>
+  <%= label_tag('product[name]', "Name") %>
+  <%= text_field_tag('product[name]') %>
 
-  <%= f.submit %>
+  <%= submit_tag "Add item" %>
 <% end %>
+
